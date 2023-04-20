@@ -23,3 +23,11 @@ p, small{
     font-family: 'Barlow', sans-serif; 
 }
 
+
+/* .triangle{
+    width: 0;
+    height: 0;
+    border-left: 25px solid blue;
+    border-right: 25px solid transparent;
+    border-bottom: 87px solid #F9FAFB; /* Adjust the color to change the triangle's fill color */
+   

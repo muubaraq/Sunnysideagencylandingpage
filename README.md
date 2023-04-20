@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution url](https://github.com/muubaraq/Sunnysideagencylandingpage)
+- Live Site URL: [live site](https://muubaraq.github.io/Sunnysideagencylandingpage/)
 
 ## My process
 
