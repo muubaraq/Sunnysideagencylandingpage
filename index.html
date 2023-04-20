@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <header class="bg-[url('./images/desktop/image-header.jpg')] bg-cover bg-no-repeat bg-bottom min-h-screen">
+    <div class="nav-div sm:max-w-7xl mx-auto max-w-md pt-3">
+      <nav class="flex sm:block justify-between items-center p-4">
+        <div class="logo-div sm:flex sm:justify-between sm:items-center">
+          <div class="img-logo-div">
+            <a href="#"><img src="./images/logo.svg" alt="logo" class=" sm:block"></a>
+          </div>
+          <div class="ul-list sm:ms-10 hidden sm:block">
+            <ul class="sm:flex list-none">
+              <li class="sm:pe-3">
+                <a href="#"
+                  class="no-underline text-white hover:bg-neutral-100 rounded-full p-3">About</a>
+                </li>
+
+              <li class="sm:pe-3 ">
+                <a href="#"
+                  class="no-underline text-white hover:bg-neutral-100 rounded-full p-3">Services</a>
+                </li>
+
+              <li class="sm:pe-3">
+                <a href="#"
+                  class="no-underline text-white hover:bg-neutral-100 rounded-full p-3">Projects</a>
+                </li>
+
+              <li class="sm:pe-3">
+                <a href="#"
+                  class="no-underline text-white hover:bg-neutral-100 rounded-full p-3">CONTACT</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-menu sm:hidden flex">
+          <button class="hamburger-icon me-3 cursor-pointer">
+            <img src="./images/icon-hamburger.svg" alt="hamburger-icon" class="w-6">
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="header-text mt-10 flex flex-col items-center justify-between">
+      <h1 class="text-6xl text-white text-center"> We are creatives</h1>
+      <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="text-center inline-block mt-16">
+    </div>
+    <!-- offcanvas -->
+    <div class="offcanvas hidden sm:hidden">
+      <div class="offcanvas-content bg-gray-50  w-8/12 fixed top-20 right-20 z-50 ">
+        <button class="offcanvas-close  top-0 left-0 mt-4 cursor-pointer z-20">
+          <!-- <img src="./images/icon-close.svg" alt="close-icon" class="w-6"> -->
+        </button>
+        <ul class="offcanvas-menu h-full mt-5 flex flex-col items-center justify-between">
+          <li class="offcanvas-item pb-3 my-3">
+            <a href="#" class="no-underline text-gray-400 hover:bg-yellow-400 rounded-full p-3">About</a>
+          </li>
+
+          <li class="offcanvas-item pb-3 my-3">
+            <a href="#" class="no-underline text-gray-400 hover:bg-yellow-400 rounded-full p-3">Services</a>
+          </li>
+
+          <li class="offcanvas-item pb-3 my-3"><a href="#"
+              class="no-underline text-gray-400 hover:bg-yellow-400 rounded-full p-3">Projects</a>
+          </li>
+
+          <li class="offcanvas-item pb-7 my-3">
+            <a href="#" class="no-underline text-gray-400 hover:bg-yellow-400 rounded-full p-3">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main>
+    <!-- transform -->
+    <div class="transform-div flex flex-col-reverse sm:flex-row min-h-screen">
+      <div class="transform-text flex-1 flex flex-col justify-center px-10 py-20 sm:items-start items-center bg-red-50">
+        <h2 class="text-5xl text-center sm:text-start text-gray-900"> Transform your <br>brand</h2>
+        <p class="w-[430px] py-5 text-gray-700">We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#" class="text-gray-900 hover:underline hover:underline-offset-[1]
+        hover:decoration-yellow-300 hover:decoration-8  font-bold">LEARN MORE</a>
+      </div>
+      <div class="transform-img flex-1 bg-[url('./images/desktop/image-transform.jpg')] bg-cover bg-no-repeat min-h-screen">
+      </div>
+    </div>
+    <!-- standout -->
+    <div class="standout-div flex flex-col sm:flex-row min-h-screen">
+    <div class="standout-img flex-1 bg-[url('./images/desktop/image-stand-out.jpg')] bg-cover bg-no-repeat min-h-screen">
+        <!-- <img src="./images/desktop/image-stand-out.jpg" alt=""> -->
+      </div>
+      <div class="standout-text flex-1 flex flex-col justify-center px-10 py-20 sm:items-start items-center bg-red-50">
+        <h2 class="text-5xl text-center sm:text-start text-gray-900"> Stand out to the right audience</h2>
+        <p class="w-[430px] py-5 text-gray-700">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+        <a href="#" class="text-gray-900 hover:underline hover:underline-offset-[1]
+         hover:decoration-red-300 hover:decoration-4 font-bold">LEARN MORE</a>
+      </div>
+    </div>
+    <!-- graphic -->
+    <div class="graphic-div flex flex-col sm:flex-row min-h-screen">
+      <div class="graphic-img flex-1 bg-[url('./images/desktop/image-graphic-design.jpg')] bg-cover bg-no-repeat flex flex-col items-center justify-end py-10 min-h-screen">
+        <h3 class="font-bold text-cyan-900 text-3xl mb-3">Graphic Design</h3>
+        <p class="text-center w-[350px] text-cyan-900">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+
+
+      <div class="photography-img flex-1 flex flex-col justify-end py-10 items-center bg-[url('./images/desktop/image-photography.jpg')] bg-cover bg-no-repeat min-h-screen">
+        <h3 class="font-bold text-blue-900 text-3xl mb-3">Photography</h3>
+        <p class="text-center w-[350px] text-blue-900">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="testimonials bg-red-50 py-20">
+      <h3 class="text-center uppercase text-3xl text-gray-500">Client testimonials</h3>
+       <div class="testimonials-container flex flex-col sm:flex-row justify-center items-center mx-auto mt-16">
+        <div class="first-testimonial flex-1 text-center">
+          <img src="./images/image-emily.jpg" alt="emily" class="inline-block rounded-full">
+          <p class="w-80 mx-auto text-gray-600 my-8">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <figcaption> Emily R.</figcaption>
+          <small class="text-gray-500">Marketing Director</small>
+        </div>
+        <div class="second-testimonial flex-1 text-center my-10 sm:my-0">
+          <img src="./images/image-thomas.jpg" alt="jennie" class="inline-block rounded-full">
+          <p class="w-80 mx-auto text-gray-600 my-8">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <figcaption>Thomas S.</figcaption>
+          <small class="text-gray-500">Chief Operating Officer</small>
+        </div>
+        <div class="third-testimonial flex-1 text-center">
+          <img src="./images/image-jennie.jpg" alt="thomas" class="inline-block rounded-full">
+          <p class="w-80 mx-auto text-gray-600 my-8">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <figcaption> Jennie F.</figcaption>
+          <small class="text-gray-500">Business Owner</small>
+        </div>
+       </div>
+    </div>
+    <!-- Colourful images -->
+    <div class="colourful-images flex sm:flex-nowrap flex-wrap">
+      <div class="firstcolourful-images flex-grow sm:flex-grow-0 basis-60 sm:basis-[25%]">
+        <img src="./images/desktop/image-gallery-cone.jpg">
+      </div>
+        <div class="second-colourful-images flex-grow sm:flex-grow-0 basis-60 sm:basis-[25%]">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg">
+      </div>
+      <div class="third-colourful-images flex-grow sm:flex-grow-0 basis-60 sm:basis-[25%]">
+        <img src="./images/desktop/image-gallery-orange.jpg">
+      </div>
+      <div class="fourth-colourful-images flex-grow sm:flex-grow-0 basis-60 sm:basis-[25%]">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg">
+      </div>
+    </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="footer-section py-28 bg-cyan-300 text-center">
+    <h2 class="font-bolder text-cyan-800 text-3xl text-center">Sunnyside</h2>
+    <div class="services-link w-[300px] mx-auto mt-9">
+      <ul class="flex justify-between">
+        <li><a href="#" class="text-cyan-800 hover:text-white">About</a></li>
+        <li><a href="#" class="text-cyan-800 hover:text-white">Services</a></li>
+        <li><a href="#" class="text-cyan-800 hover:text-white">Projects</a></li>
+      </ul>
+    </div>
+    <div class="icon-section mt-16 w-[200px] mx-auto flex justify-between">
+      <a href="#"><i class="bi bi-facebook text-cyan-800 hover:text-white text-2xl"></i></a>
+      <a href="#"><i class="bi bi-instagram text-cyan-800 hover:text-white text-2xl"></i></a>
+      <a href="#"><i class="bi bi-twitter text-cyan-800 hover:text-white text-2xl"></i></a>
+      <a href="#"><i class="bi bi-pinterest text-cyan-800 hover:text-white text-2xl"></i></a>
+    </div>
+
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
