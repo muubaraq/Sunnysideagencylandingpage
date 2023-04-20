@@ -16,7 +16,7 @@
 
 <body>
 
-  <header class="bg-[url('./images/desktop/image-header.jpg')] bg-cover bg-no-repeat bg-bottom min-h-screen">
+  <header class="sm:bg-[url('./images/desktop/image-header.jpg')] bg-cover bg-no-repeat bg-bottom min-h-screen bg-[url('./images/mobile/image-header.jpg')]">
     <div class="nav-div sm:max-w-7xl mx-auto max-w-md pt-3">
       <nav class="flex sm:block justify-between items-center p-4">
         <div class="logo-div sm:flex sm:justify-between sm:items-center">
@@ -59,9 +59,10 @@
       <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="text-center inline-block mt-16">
     </div>
     <!-- offcanvas -->
-    <div class="offcanvas hidden sm:hidden">
-      <div class="offcanvas-content bg-gray-50  w-8/12 fixed top-20 right-20 z-50 ">
-        <button class="offcanvas-close  top-0 left-0 mt-4 cursor-pointer z-20">
+    <div class="offcanvas hidden sm:hidden ">
+      <div class="offcanvas-content bg-gray-50  w-8/12 fixed top-32 right-20 z-50 ">
+        <!-- <span class="box-content triangle absolute top-[20px] right-0 "></span> -->
+        <button class="offcanvas-close  top-50 left-0 mt-4 cursor-pointer z-20">
           <!-- <img src="./images/icon-close.svg" alt="close-icon" class="w-6"> -->
         </button>
         <ul class="offcanvas-menu h-full mt-5 flex flex-col items-center justify-between">
@@ -95,12 +96,12 @@
         <a href="#" class="text-gray-900 hover:underline hover:underline-offset-[1]
         hover:decoration-yellow-300 hover:decoration-8  font-bold">LEARN MORE</a>
       </div>
-      <div class="transform-img flex-1 bg-[url('./images/desktop/image-transform.jpg')] bg-cover bg-no-repeat min-h-screen">
+      <div class="transform-img flex-1 sm:bg-[url('./images/desktop/image-transform.jpg')] bg-cover bg-no-repeat min-h-screen bg-[url('./images/mobile/image-transform.jpg')] bg-center">
       </div>
     </div>
     <!-- standout -->
     <div class="standout-div flex flex-col sm:flex-row min-h-screen">
-    <div class="standout-img flex-1 bg-[url('./images/desktop/image-stand-out.jpg')] bg-cover bg-no-repeat min-h-screen">
+    <div class="standout-img flex-1 sm:bg-[url('./images/desktop/image-stand-out.jpg')] bg-cover bg-no-repeat min-h-screen bg-center bg-[url('./images/desktop/image-stand-out.jpg')] ">
         <!-- <img src="./images/desktop/image-stand-out.jpg" alt=""> -->
       </div>
       <div class="standout-text flex-1 flex flex-col justify-center px-10 py-20 sm:items-start items-center bg-red-50">
@@ -113,13 +114,13 @@
     </div>
     <!-- graphic -->
     <div class="graphic-div flex flex-col sm:flex-row min-h-screen">
-      <div class="graphic-img flex-1 bg-[url('./images/desktop/image-graphic-design.jpg')] bg-cover bg-no-repeat flex flex-col items-center justify-end py-10 min-h-screen">
+      <div class="graphic-img flex-1 sm:bg-[url('./images/desktop/image-graphic-design.jpg')] bg-[url('./images/mobile/image-graphic-design.jpg')] bg-cover bg-no-repeat flex flex-col items-center justify-end py-10 min-h-screen bg-center">
         <h3 class="font-bold text-cyan-900 text-3xl mb-3">Graphic Design</h3>
         <p class="text-center w-[350px] text-cyan-900">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
       </div>
 
 
-      <div class="photography-img flex-1 flex flex-col justify-end py-10 items-center bg-[url('./images/desktop/image-photography.jpg')] bg-cover bg-no-repeat min-h-screen">
+      <div class="photography-img flex-1 flex flex-col justify-end py-10 items-center sm:bg-[url('./images/desktop/image-photography.jpg')] bg-[url('./images/mobile/image-photography.jpg')] bg-cover bg-no-repeat min-h-screen bg-center">
         <h3 class="font-bold text-blue-900 text-3xl mb-3">Photography</h3>
         <p class="text-center w-[350px] text-blue-900">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </div>
